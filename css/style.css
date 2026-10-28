@@ -153,3 +153,10 @@ body.mo .mn .btn{opacity:1;transform:none;transition-delay:.75s}
 .cb:hover,.cb:focus-visible{background:var(--n1);color:var(--c)}.cb:active{transform:scale(.92)}
 .cb .i2,.cb.ok .i1{display:none}.cb.ok .i2{display:block}
 .cm{font:600 .95rem var(--fb);opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .4s var(--o)}.cm.on{opacity:1;transform:none}
+@media (max-width: 900px), (orientation: portrait) {
+  .hero { align-items: flex-start; min-height: min(100svh, 44rem); }
+  .hero .wrap { padding-top: 100px; }
+}
+@media (orientation: portrait) and (min-width: 901px) {
+  .hero { min-height: auto; }
+}
